@@ -1,0 +1,28 @@
+{
+    "statusCodes": {
+        "success": 200,
+        "resourceCreated": 201,
+        "resourceUpdated": 202,
+        "resourceDeleted": 205,
+        "userNotRegistered": 209,
+        "errorInSendingEmail": 221,
+        "invalidCredentials": 222,
+        "insufficientData": 224,
+        "alreadyExists": 231,
+        "invalidToken": 241,
+        "noSuchResource": 244,
+        "accessDenied": 251,
+        "invalidFormat": 253,
+        "databaseError": 299
+    },
+    "responseMessages": {
+        "success": "Success",
+        "failure": "Fail",
+        "insufficientData": "Insufficient Data",
+        "errorInSendingEmail": "Error in sending email",
+        "accessDenied": "Access Denied",
+        "databaseError": "Database Error",
+        "invalidFormat": "Invalid JSON format",
+        "invalidToken": "Invalid Token"
+    }
+}

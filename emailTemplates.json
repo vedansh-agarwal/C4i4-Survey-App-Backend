@@ -1,0 +1,39 @@
+{
+    "emailTemplates": {
+        "activateUserAccount": {
+            "subject": "Welcome to Edify",
+            "text": "Please use the following link for completing your registration for C4i4's survey application account:\n\n\n{{link to frontend enter details}}\n\nIf you didn't register for this account, you can safely ignore this email. Someone else might have typed your email address by mistake.\n\nThanks,\nSurvey Team",
+            "html": "<p>Please use the following link for completing your registration for C4i4's survey application account:</p><p><a href=\"{{link to frontend enter details}}\">Register</a></p><p>If you didn't register for this account, you can safely ignore this email. Someone else might have typed your email address by mistake.</p><p>Thanks,<br>Survey Team</p>"
+        },
+        "resetUserPassword": {
+            "subject": "Edify Password Reset Link",
+            "text": "Please use the following link for resetting your password for C4i4's survey application account:\n\n\n{{link to frontend password reset}}\n\nIf you didn't initiate the password reset request, you can safely ignore this email. Someone else might have typed your email/username by mistake.\n\nThanks,\nSurvey Team",
+            "html": "<p>Please use the following link for resetting your password for C4i4's survey application account:</p><p><a href=\"{{link to frontend password reset}}\">Reset Password</a></p><p>If you didn't initiate the password reset request, you can safely ignore this email. Someone else might have typed your email/username by mistake.</p><p>Thanks,<br>Survey Team</p>"
+        },
+        "customerLogin": {
+            "subject": "Survey Account Login Security Code",
+            "text": "Survey Code\n\nPlease use the following security code for logging into the Survey Application.\n\n\n\n\nSecurity Code : {{otp}}\n\nIf you didn't request this code, you can safely ignore this email. Someone else might have typed your email address by mistake.\n\nThanks,\nSurvey Team"
+        },
+        "customerRegistration": {
+            "subject": "Survey Account Email Verification Security Code",
+            "text": "Survey Code\n\nPlease use the following security code for verifying the company email address ${email}.\n\n\n\n\nSecurity Code : {{otp}}\n\nIf you didn't request this code, you can safely ignore this email. Someone else might have typed your email address by mistake.\n\nThanks,\nSurvey Team"
+        },
+        "customerSurveyStart": {
+            "subject": "Survey Assessment Link",
+            "text": "Dear {{customer_name}},\n\nThank you for registering with us. You can now start the survey using following link.\n\n\n{{link}}\n\nThanks,\nSurvey Team",
+            "html": "<p>Dear {{customer_name}},</p><p>Thank you for registering with us. You can now start the survey using following link:</p><p><a href=\"{{link}}\">Start Survey</a></p><p>Thanks,<br>Survey Team</p>"
+        },
+        "customerReport": {
+            "subject": "Your Digital Maturity Assessment Report",
+            "text": "Dear {{name}},\n\nThank you for completing the survey. Please find your survey report for C4i4 Digital Maturity Assessment Test attached below.\n\n\nThanks,\nSurvey Team"
+        },
+        "notifyToStart": {
+            "subject": "[Reminder] Please Start the Digital Maturity Survey",
+            "text": "Please start the dmat survey"
+        },
+        "notifyToComplete": {
+            "subject": "[Reminder] Please Complete the Digital Maturity Survey",
+            "text": "Please complete the dmat survey"
+        }
+    }
+}
