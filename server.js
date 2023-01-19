@@ -1514,7 +1514,7 @@ app.post("/edify/customer/verify-otp", (req, res) => {
     });
 });
 
-app.get("/edify/customer/generate-access-token", checkCustomerRefresh, (req, res) => {
+app.get("/edify/customer/generate-access-token", checkCustomerAccess, (req, res) => {
     const {refresh_token, email, customer_id} = req.body;
     const encrypted_refresh =  aes256.encrypt(process.env.CUSTOMER_REFRESH_TOKEN_ENCRYPTION_KEY, refresh_token); 
     const access_token = jwt.sign({refresh_token: encrypted_refresh, customer_id: customer_id}, process.env.JWT_CUSTOMER_ACCESS_TOKEN, {expiresIn: process.env.CUSTOMER_ACCESS_TOKEN_EXPIRY});
